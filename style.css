@@ -1,0 +1,342 @@
+            *,
+            body {
+                margin: 0;
+                padding: 0;
+                outline: 0;
+                font-size: 100%;
+                line-height: 1;
+                font-family: sans-serif;
+                box-sizing: border-box;
+                color: #000000;
+                text-decoration: none;
+                list-style-type: none;
+                background-color: #fff;
+            }
+            @media screen and (min-width: 320px) {
+                /*Header Section*/
+                header {
+                    height: 60px;
+                    width: 100%;
+                    padding: 0 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background-color: #fff;
+                    border-bottom: 1px solid darkgray;
+                    margin-bottom: 10px;
+                }
+                header .logo_sec {
+                    width: 75px;
+                    max-width: 75px;
+                }
+                header .logo_sec .logo_image {
+                    width: 100%;
+                    text-decoration: none;
+                }
+                header .logo_image .logo {
+                    width: 100%;
+                }
+                header .right_sec {
+                    width: auto;
+                    display: flex;
+                    justify-content: right;
+                    align-items: center;
+                    column-gap: 15px;
+                }
+                header .right_sec_menu {
+                    display: flex;
+                    justify-content: right;
+                    align-items: center;
+                    column-gap: 35px;
+                    margin-right: 20px;
+                    display: none;
+                }
+                header .right_sec_menu .menu_with_icon {
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+                header .right_sec .sun_img {
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid black;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                header .right_sec .profile_img {
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid black;
+                    border-radius: 50%;
+                    background-image: url(https://lh3.googleusercontent.com/ogw/ADea4I6oDXMtLWn8eRuIAnaKnPfOhvafGpBo0UVMEeJ_=s32-c-mo);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                /*Filter section*/
+                .filter_section {
+                    position: fixed;
+                    top: 80px;
+                    padding: 10px 25px;
+                    display: none;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    column-gap: 10px;
+                    font-size: 12px;
+                    width: 100%;
+                    border-bottom: 1px solid darkgray;
+                }
+                .filter_section #test {
+                    display: flex;
+                    flex-wrap: wrap;
+                    column-gap: 10px;
+                    justify-content: center;
+                }
+                .section_menu {
+                    padding: 10px 5px 10px 10px;
+                    background-color: #eae7e7b0;
+                    width: auto;
+                    display: flex;
+                    column-gap: 10px;
+                    align-items: center;
+                    border-radius: 3px;
+                }
+
+                .section_menu input,
+                .section_menu select,
+                .section_menu option,
+                .section_menu button {
+                    border: none;
+                    min-width: 100px;
+                    background-color: transparent;
+                }
+                .section_menu.button {
+                    background-color: forestgreen;
+                }
+                .section_menu.button button {
+                    min-width: auto;
+                    padding: 0 15px;
+                    color: #ffffff;
+                }
+                .section_menu #searchbox {
+                    min-width: 185px;
+                }
+                .section_menu i {
+                    background-color: transparent;
+                }
+                /* masonry  */
+
+                .main-section {
+                    background-color: #f7f7f7;
+                    color: #0d2b3f;
+                    max-width: 100%;
+                    margin-top: 60px;
+                }
+                .container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100vh;
+                    flex-direction: column;
+                }
+                .nav-section {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: 20px 10px;
+                    position: fixed;
+                    z-index: 2;
+                    background-color: #f7f7f7;
+                    display: none;
+                }
+                .nav-section > * {
+                    background-color: transparent;
+                }
+                .buttons {
+                    display: flex;
+                }
+                .buttons div {
+                    margin: 0px 10px;
+                    cursor: pointer;
+                    background-color: transparent;
+                }
+                .buttons div > * {
+                    pointer-events: none;
+                    background-color: transparent;
+                }
+                .wrapper {
+                    columns: 1;
+                    padding-top: 10px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    background-color: #f7f7f7;
+                }
+                .wrapper.list {
+                    width: 50%;
+                }
+                .wrapper.list .map {
+                    display: block;
+                }
+                .wrapper .col {
+                    break-inside: avoid;
+                    margin-bottom: 10px;
+                    border-radius: 10px;
+                    background-color: transparent;
+                }
+                .wrapper .col a {
+                    display: block;
+                    background-color: transparent;
+                }
+                .wrapper .col a .masonry-image {
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 100%;
+                    min-height: 200px;
+                    position: relative;
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+                }
+                .wrapper .col a .masonry-image.one {
+                    background-image: url(https://cdn.pixabay.com/photo/2016/04/18/08/50/kitchen-1336160_960_720.jpg);
+                    height: 250px;
+                }
+                .wrapper .col a .masonry-image.two {
+                    background-image: url(https://cdn.pixabay.com/photo/2021/10/06/15/05/bathroom-6686057__340.jpg);
+                    height: 260px;
+                }
+                .wrapper .col a .masonry-image.three {
+                    background-image: url(https://cdn.pixabay.com/photo/2022/06/18/21/40/strasbourg-7270721__340.jpg);
+                    height: 280px;
+                }
+                .wrapper .col a .masonry-image.four {
+                    background-image: url(https://cdn.pixabay.com/photo/2022/06/29/08/35/chateau-7291256__340.jpg);
+                    height: 270px;
+                }
+                .wrapper .col a .masonry-image .image-right {
+                    position: absolute;
+                    bottom: 5px;
+                    right: 5px;
+                }
+                .wrapper .col a .masonry-image .image-right div {
+                    font-size: 10px;
+                    background: #fff;
+                    padding: 3px 8px;
+                    display: flex;
+                    border-radius: 4px;
+                }
+                .wrapper .col a .masonry-image .image-right div h5 {
+                    padding-left: 5px;
+                }
+                .wrapper .col a .masonry-details {
+                    padding: 15px;
+                    border: 1px solid gray;
+                    border-bottom-left-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                    min-height: 132px;
+                }
+                .wrapper .col a .masonry-details .price_tag {
+                    display: inline-block;
+                    width: auto;
+                    background-color: #529b50;
+                    border-radius: 2px;
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 28px;
+                    padding: 0 10px;
+                }
+                .wrapper .col a .masonry-details .icon_details {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 15px 0;
+                }
+                .wrapper .col a .masonry-details .icon_details .left-icon {
+                    display: flex;
+                }
+                .wrapper .col a .masonry-details .icon_details .icons {
+                    padding-right: 10px;
+                }
+                .wrapper .col a .masonry-details .icon_details .heart {
+                    padding-right: 10px;
+                }
+                .wrapper .col a .masonry-details .location_details {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-bottom: 10px;
+                }
+                .wrapper .col a .masonry-details .location_details span {
+                    font-size: 13px;
+                    width: 100%;
+                    display: block;
+                    font-weight: 500;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    cursor: pointer;
+                    padding-left: 5px;
+                    line-height: 1.2;
+                }
+            }
+            @media screen and (min-width: 769px) {
+                header {
+                    height: 80px;
+                }
+                header .logo_sec {
+                    width: 100px;
+                    max-width: 100px;
+                }
+                header .right_sec_menu {
+                    display: flex;
+                }
+                .main-section {
+                    margin-top: 80px;
+                }
+                .nav-section {
+                    display: flex;
+                }
+                .wrapper {
+                    padding-top: 60px;
+                    columns: 2;
+                }
+            }
+            @media screen and (min-width: 1024px) {
+                .filter_section {
+                    row-gap: 10px;
+                    display: flex;
+                }
+                .filter_section #test {
+                    display: flex;
+                    row-gap: 10px;
+                }
+                .main-section {
+                    margin-top: 136px;
+                }
+                .nav-section {
+                    display: flex;
+                }
+                .wrapper {
+                    padding-top: 60px;
+                    columns: 4;
+                }
+            }
+
+            @media screen and (min-width: 1200px) {
+                .wrapper {
+                    padding-top: 60px;
+                    columns: 6;
+                }
+            }
+
+            header,
+            .filter_section {
+                z-index: 2;
+            }
