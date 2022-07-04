@@ -180,6 +180,7 @@
                 }
                 .wrapper.list {
                     width: 50%;
+                    columns: 1;
                 }
                 .wrapper.list .map {
                     display: block;
